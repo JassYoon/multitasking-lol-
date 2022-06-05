@@ -34,14 +34,15 @@ for image in images_url :
     url = image.get_attribute('src')
     img_url.append(url)
 
-print(img_url)
+for ed in img_url:
+    print(ed)
 
 
 
 
 img_folder = './Desktop/crawling_selenium'
 
-if not os.path.isdir(img_folder) 
+if not os.path.isdir(img_folder) :
     os.mkdir(img_folder)
 
 for index, link in enumerate(img_url) :
